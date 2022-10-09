@@ -13,7 +13,7 @@ function onStartButton() {
   startBtn.disabled = true;
   intervalId = setTimeout(() => {
     onStartButton();
-  }, 2000);
+  }, 1000);
 }
 
 function onEndButton() {
