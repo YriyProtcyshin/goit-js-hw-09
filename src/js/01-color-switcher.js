@@ -2,8 +2,11 @@ const body = document.querySelector('body');
 const startBtn = document.querySelector('[data-start]');
 const stopBtn = document.querySelector('[data-stop]');
 
+// -----------------------------------------------------------
 startBtn.addEventListener('click', onStartButton);
 stopBtn.addEventListener('click', onEndButton);
+
+// -----------------------------------------------------------
 
 let intervalId = null;
 

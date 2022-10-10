@@ -1,12 +1,15 @@
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 
+// -----------------------------------------------------------------------
 const delayInput = document.querySelector('[name="delay"]');
 const stepInput = document.querySelector('[name="step"]');
 const amountInput = document.querySelector('[name="amount"]');
 const button = document.querySelector('[type="submit"]');
+// ------------------------------------------------------------------------
 
 button.addEventListener('click', onButtonClick);
 
+//--------------------------------------------------------------------------
 function onButtonClick(e) {
   e.preventDefault();
   let delay = Number(delayInput.value);
@@ -25,6 +28,7 @@ function onButtonClick(e) {
   }, delay);
 }
 
+// --------- Create Promise -------------------------------------------------
 function createPromise(position, delay) {
   const shouldResolve = Math.random() > 0.3;
   return new Promise((resolve, reject) => {
